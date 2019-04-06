@@ -29,4 +29,39 @@
 .title {
     font-weight: 700;
     font-size:120%;
+    color:#09aac6;
+}
+.thumbnailsPlaceHolder {
+    width:100%;
+    height:100%;
+}
+
+.thumbnailItem {
+    padding-bottom:5px;
+    padding-top:5px;
+    border:1px solid white;
+
+}
+
+.thumbnailItem:hover {
+    border:1px solid darkcyan;
+    background-color:lightcyan;
+    cursor: pointer;
+}
+
+.thumbnailItem div {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.upNext {
+    padding-bottom:10px;
+}
+
+.scrollableList {
+    overflow: scroll;
+    max-height:350px;
+}
+.thumbTitle {
+    font-size:75%;
 }
