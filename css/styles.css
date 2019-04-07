@@ -40,7 +40,6 @@
     padding-bottom:5px;
     padding-top:5px;
     border:1px solid white;
-
 }
 
 .thumbnailItem:hover {
@@ -55,13 +54,18 @@
 }
 
 .upNext {
-    padding-bottom:10px;
+    padding-bottom:5px;
+    padding-top:5px;
 }
 
 .scrollableList {
     overflow: scroll;
-    max-height:350px;
+    max-height:200px;
 }
 .thumbTitle {
     font-size:75%;
+}
+
+.fb-like {
+    padding-bottom:10px;
 }
