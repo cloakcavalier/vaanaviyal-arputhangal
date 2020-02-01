@@ -15,10 +15,18 @@
     var HOME_URL = "/data/home.json";
     var RELATED = "related";
     var TRACK_URL = "trackUrl";
+    var TITLE = "title";
+    var DESCRIPTION = "description";
+    var TRACK_URL_PREFIX = "http://www.arputhangal.com/watch.html?v=";
     var pageData = null;
     var homeData = null;
     var isHome;
-    var dateOtions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var dateOtions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
 
     var TOTAL_RELATED = 5;
     var getUrl = function () {
@@ -59,7 +67,9 @@
         var elmnt;
         var index;
         var attribName;
+        var url;
         var pdate;
+        var imageUrl;
         var dataTargets = document.getElementsByClassName(CLASS_DATA_TARGET);
         for (index = 0; index < dataTargets.length; index++) {
             elmnt = dataTargets[index];
@@ -69,10 +79,20 @@
                     elmnt.src = YT_PREFIX + pageData[attribName];
                 } else if (attribName == PUBLISHED_AT) {
                     pdate = new Date(pageData[attribName]);
-                     elmnt.innerHTML = "Published on " + pdate.toLocaleDateString("en-US", dateOtions)
-                } else if (attribName == TRACK_URL) { 
-                    elmnt.setAttribute("data-href", "http://www.arputhangal.com/watch.html?v=" + pageData[VIDEO_SOURCE]);
+                    elmnt.innerHTML = "Published on " + pdate.toLocaleDateString("en-US", dateOtions)
+                } else if (attribName == TRACK_URL) {
+                    url = TRACK_URL_PREFIX + pageData[VIDEO_SOURCE];
+                    imageUrl = "https://img.youtube.com/vi/" + pageData[VIDEO_SOURCE] + "/maxresdefault.jpg";
+                    elmnt.setAttribute("data-href", url);
+                    console.log("Setting og url");
+                    document.querySelector("meta[property='og:url']").setAttribute("content", url);
+                    document.querySelector("meta[property='og:image']").setAttribute("content", imageUrl);
                 } else {
+                    if (attribName == TITLE) {
+                        document.querySelector("meta[property='og:title']").setAttribute("content", pageData[attribName]);
+                    } else if (attribName == DESCRIPTION) {
+                        document.querySelector("meta[property='og:description']").setAttribute("content", pageData[attribName].slice(0,160) + "...");
+                    }
                     elmnt.innerHTML = pageData[attribName];
                 }
             }
@@ -117,7 +137,7 @@
     var collectionHtmlSuffix = '"><img src="https://img.youtube.com/vi/';
     var collectionHtmlEnd = '/mqdefault.jpg" /></a></div>';
 
-    var getRandomRelated = function() {
+    var getRandomRelated = function () {
         var shuffled = homeData.sort(() => 0.5 - Math.random());
         var selected = shuffled.slice(0, TOTAL_RELATED);
         return selected;
@@ -137,7 +157,7 @@
         });
         collectionDataDiv.innerHTML = colHtml;
     }
-    
+
     var url = getUrl();
     pageData = getUrlData(url);
     homeData = getUrlData(HOME_URL);
