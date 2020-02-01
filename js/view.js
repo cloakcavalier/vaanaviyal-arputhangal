@@ -17,7 +17,8 @@
     var TRACK_URL = "trackUrl";
     var TITLE = "title";
     var DESCRIPTION = "description";
-    var TRACK_URL_PREFIX = "http://www.arputhangal.com/watch.html?v=";
+    // var TRACK_URL_PREFIX = "http://www.arputhangal.com/watch.html?v=";
+    var TRACK_URL_PREFIX = "https://www.youtube.com/watch?v=";
     var pageData = null;
     var homeData = null;
     var isHome;
@@ -39,7 +40,6 @@
         isHome = false;
         var url = new URL(currentUrl);
         var dataValue = url.searchParams.get("v");
-        console.log(dataValue);
         return "/data/" + dataValue + ".json";
     }
 
@@ -152,7 +152,6 @@
             collectionIds = getRandomRelated();
         }
         collectionIds.forEach(function (urlId) {
-            console.log(urlId);
             colHtml += collectionHtmlPrefix + urlId + collectionHtmlSuffix + urlId + collectionHtmlEnd;
         });
         collectionDataDiv.innerHTML = colHtml;
