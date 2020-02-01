@@ -84,15 +84,15 @@
                     url = TRACK_URL_PREFIX + pageData[VIDEO_SOURCE];
                     imageUrl = "https://img.youtube.com/vi/" + pageData[VIDEO_SOURCE] + "/maxresdefault.jpg";
                     elmnt.setAttribute("data-href", url);
-                    console.log("Setting og url");
+                    /*console.log("Setting og url");
                     document.querySelector("meta[property='og:url']").setAttribute("content", url);
-                    document.querySelector("meta[property='og:image']").setAttribute("content", imageUrl);
+                    document.querySelector("meta[property='og:image']").setAttribute("content", imageUrl);*/
                 } else {
-                    if (attribName == TITLE) {
+                    /*if (attribName == TITLE) {
                         document.querySelector("meta[property='og:title']").setAttribute("content", pageData[attribName]);
                     } else if (attribName == DESCRIPTION) {
                         document.querySelector("meta[property='og:description']").setAttribute("content", pageData[attribName].slice(0,160) + "...");
-                    }
+                    }*/
                     elmnt.innerHTML = pageData[attribName];
                 }
             }
