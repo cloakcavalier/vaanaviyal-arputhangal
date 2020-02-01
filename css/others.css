@@ -1,0 +1,268 @@
+.header {
+    height: 56px;
+    background-image: linear-gradient(to right, rgb(42, 35, 79), rgb(16, 120, 67));
+}
+
+.footerData {
+    text-align: center;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.publishedAt {
+    color: #888;
+    font-size: 85%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footerOption {
+    display: inline-block;
+    margin: 0;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 85%
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.logoText {
+    padding: 10px 0px;
+    font-size: 125%;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.logoText:hover {
+    color: #dcf235;
+}
+
+.slide {
+    max-width: 100%;
+    animation: fading 5s infinite;
+    margin:0 auto;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.share {
+    margin-bottom:20px;
+}
+.banner {
+    background-color: black;
+}
+
+.slide-button {
+    opacity: 0.2;
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.slide-previous {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.slide-next {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
+
+
+.thumbnail img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #333;
+    height: 120px;
+}
+
+.vid-container {
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.vid-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.description p {
+    line-height: 2em;
+}
+
+.title p {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 135%;
+}
+
+@media (min-width: 300px) {
+    
+    .container {
+        width: 300px ;
+        max-width: 300px ;
+    }
+
+    .thumbnail {
+        width: 250px;
+        margin: 5px;
+    }
+     .footer {
+        height:350px;
+    }
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    
+    .container {
+        width: 400px ;
+        max-width: 400px ;
+    }
+
+    .thumbnail {
+        width: 320px;
+        margin: 40px;
+    }
+     .footer {
+        height:300px;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .container {
+        width: 500px ;
+        max-width: 500px ;
+    }
+
+    .thumbnail {
+        width: 240px;
+        margin: 5px;
+    }
+   .footer {
+        height:300px;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .container {
+        width: 702px ;
+        max-width: 702px ;
+    }
+
+    .thumbnail {
+        width: 224px;
+        margin: 5px;
+    }
+    
+     .footer {
+        height:150px;
+    }
+    
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .container {
+        width: 940px ;
+        max-width: 940px ;
+    }
+
+    .thumbnail {
+        width: 225px;
+        margin: 5px;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px ;
+        max-width: 1140px ;
+    }
+
+    .thumbnail {
+        width: 275px;
+        margin: 5px;
+    }
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1540px) {
+    .container {
+        width: 1425px ;
+        max-width: 1425px ;
+    }
+
+    .thumbnail {
+        width: 275px;
+        margin: 5px;
+    }
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1700px) {
+    .container {
+        width: 1600px ;
+        max-width: 1600px;
+    }
+
+    .thumbnail {
+        width: 300px;
+        margin: 10px;
+    }
+
+}
