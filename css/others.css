@@ -1,13 +1,60 @@
 .header {
-    height: 56px;
-    background-image: linear-gradient(to right, rgb(42, 35, 79), rgb(16, 120, 67));
+    height: 50px;
+    width: 100%;
+    border-bottom: 5px solid #CDFE00;
+    background: #2F285B;
+
+}
+
+.headerWrapper {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.headerHat {
+    height: 25px;
+    width: 100%;
+    background: #504b75;
+    display: none;
 }
 
 .footerData {
     text-align: center;
 }
 
+
+.headerHatOption {
+    display: inline-block;
+    font-size: 80%;
+    padding-left: 20px;
+}
+
+.headerHatOption a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.headerHatOption a:hover {
+    color: #dcf235;
+}
+
+.headerHatOptions {
+    float: right;
+}
+
 .logo {
+    padding: 5px 0px;
+}
+
+
+.logoFooter {
     margin-top: 10px;
 }
 
@@ -59,7 +106,7 @@
 .slide {
     max-width: 100%;
     animation: fading 5s infinite;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 @keyframes fading {
@@ -81,11 +128,12 @@
 }
 
 .share {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
+
 .banner {
     background-color: black;
-    position:relative;
+    position: relative;
 }
 
 .slide-button {
@@ -147,77 +195,89 @@
 }
 
 @media (min-width: 300px) {
-    
+
     .container {
-        width: 300px ;
-        max-width: 300px ;
+        width: 300px;
+        max-width: 300px;
     }
 
     .thumbnail {
         width: 250px;
         margin: 5px;
     }
-     .footer {
-        height:350px;
+
+    .footer {
+        height: 350px;
     }
 }
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-    
+
     .container {
-        width: 400px ;
-        max-width: 400px ;
+        width: 400px;
+        max-width: 400px;
     }
 
     .thumbnail {
         width: 320px;
         margin: 40px;
     }
-     .footer {
-        height:300px;
+
+    .footer {
+        height: 300px;
     }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
     .container {
-        width: 500px ;
-        max-width: 500px ;
+        width: 500px;
+        max-width: 500px;
     }
 
     .thumbnail {
         width: 240px;
         margin: 5px;
     }
-   .footer {
-        height:300px;
+
+    .footer {
+        height: 300px;
     }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
     .container {
-        width: 702px ;
-        max-width: 702px ;
+        width: 702px;
+        max-width: 702px;
     }
 
     .thumbnail {
         width: 224px;
         margin: 5px;
     }
-    
-     .footer {
-        height:150px;
+
+    .footer {
+        height: 150px;
     }
-    
+
+    .headerHat {
+        display: block;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
     .container {
-        width: 940px ;
-        max-width: 940px ;
+        width: 940px;
+        max-width: 940px;
     }
 
     .thumbnail {
@@ -229,8 +289,8 @@
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     .container {
-        width: 1140px ;
-        max-width: 1140px ;
+        width: 1140px;
+        max-width: 1140px;
     }
 
     .thumbnail {
@@ -243,21 +303,20 @@
 /* Larger than Desktop HD */
 @media (min-width: 1540px) {
     .container {
-        width: 1425px ;
-        max-width: 1425px ;
+        width: 1425px;
+        max-width: 1425px;
     }
 
     .thumbnail {
         width: 275px;
         margin: 5px;
     }
-
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1700px) {
     .container {
-        width: 1600px ;
+        width: 1600px;
         max-width: 1600px;
     }
 
@@ -269,6 +328,6 @@
 }
 
 .centerFrame {
-        margin: 0 auto !important;
+    margin: 0 auto !important;
     display: block;
 }
