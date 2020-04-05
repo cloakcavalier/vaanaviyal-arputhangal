@@ -85,6 +85,7 @@
 }
 .banner {
     background-color: black;
+    position:relative;
 }
 
 .slide-button {
