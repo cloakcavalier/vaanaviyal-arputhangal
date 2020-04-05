@@ -55,7 +55,10 @@ body {
 
 
 .logoFooter {
-    margin-top: 10px;
+    padding-top: 30px;
+    display:block;
+    margin:0 auto;
+    
 }
 
 .publishedAt {
@@ -194,6 +197,7 @@ body {
     font-size: 135%;
 }
 
+/*
 @media (min-width: 300px) {
 
     .container {
@@ -209,10 +213,29 @@ body {
     .footer {
         height: 350px;
     }
+}*/
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 390px;
+        max-width: 390px;
+    }
+
+    .thumbnail {
+        width: 350px;
+    }
+
+    .footer {
+        height: 350px;
+        width:400px;
+    }
 }
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+
+
 
     .container {
         width: 400px;
@@ -220,8 +243,8 @@ body {
     }
 
     .thumbnail {
-        width: 320px;
-        margin: 40px;
+        width: 380px;
+        margin: 10px;
     }
 
     .footer {
@@ -259,7 +282,7 @@ body {
     }
 
     .footer {
-        height: 150px;
+        height: 230px;
     }
 
     .headerHat {
