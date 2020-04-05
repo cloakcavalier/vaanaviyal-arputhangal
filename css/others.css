@@ -217,7 +217,11 @@ body {
 
 @media (max-width: 400px) {
 
-    .container {
+    .slide {
+        max-width:400px;
+        width:400px;
+    }
+    .container,  {
         width: 390px;
         max-width: 390px;
     }
