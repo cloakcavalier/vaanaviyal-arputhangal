@@ -3,6 +3,7 @@
     width: 100%;
     border-bottom: 5px solid #CDFE00;
     background: #2F285B;
+    box-shadow: 1px 4px 20px 0px #504b75;
 }
 
 .headerWrapper {
@@ -326,7 +327,7 @@ body {
 }
 
 /*Media queries just for the menu*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -343,12 +344,12 @@ body {
 
     .topnav.responsive a.icon {
         text-align: right;
-        transition:0s;
+        transition: 0s;
     }
 
     .topnav.responsive a.icon:hover {
         background: #2F285B;
-        color:#fff !important;
+        color: #fff !important;
     }
 
 
@@ -402,4 +403,23 @@ body {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
+}
+
+.notifHolder {
+    display: inline-block;
+    position: relative;
+    padding: 2px 5px;
+}
+
+#notifCount {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: white;
+
+    padding: 1px 4px;
+    font-size: 12px;
+
+    position: absolute;
+    top: 0;
+    margin-left: 3px;
 }

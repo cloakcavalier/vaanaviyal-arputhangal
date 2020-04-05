@@ -6,3 +6,14 @@ function menuclick() {
     x.className = "topnav";
   }
 }
+
+function validateNotif() {
+    var notifCount = document.getElementById("notifCount");
+    if(notifCount.innerHTML == "0") {
+        notifCount.style.display = 'none';
+    } else {
+        notifCount.style.display = 'inline-block';
+    }
+}
+
+validateNotif();
