@@ -402,8 +402,17 @@ p.description {
     line-height: 40px;
 }
 
-.fb-like {
+.social_buttons {
     margin-bottom: 20px;
+}
+
+.fb-like {
+    width: 280px;
+}
+
+#twitter-widget-0 {
+    position: relative !important;
+    top: 6px;
 }
 
 .vid-description {
