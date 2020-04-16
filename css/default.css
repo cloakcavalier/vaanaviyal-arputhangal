@@ -268,7 +268,7 @@ p.description {
     }
 }
 
-/*Styles for Home banner*/
+/*Styles for Home banner and article snippet wrapper*/
 @media (max-width: 1199px) {
 
     .vu-count,
@@ -278,6 +278,16 @@ p.description {
 
     .sub-count-val {
         font-size: 250%;
+    }
+
+    .article-snippet-wrapper h4 {
+        font-size: 130%;
+    }
+
+    .article-snippet-wrapper p {
+        font-size: 100%;
+        line-height: 20px;
+        height: 100px;
     }
 }
 
@@ -291,6 +301,17 @@ p.description {
     .sub-count-val {
         font-size: 200%;
     }
+
+    .article-snippet-wrapper h4 {
+        font-size: 120%;
+        line-height: 30px !important;
+    }
+
+    .article-snippet-wrapper p {
+        font-size: 100%;
+        line-height: 25px !important;
+        height: 100px !important;
+    }
 }
 
 @media (max-width: 800px) {
@@ -302,6 +323,17 @@ p.description {
 
     .sub-count-val {
         font-size: 180%;
+    }
+
+    .article-snippet-wrapper h4 {
+        font-size: 110%;
+        line-height: 25px !important;
+    }
+
+    .article-snippet-wrapper p {
+        font-size: 90%;
+        line-height: 20px !important;
+        height: 80px !important;
     }
 }
 
@@ -337,9 +369,24 @@ p.description {
     }
 
     .vid-title {
-        font-size: 120%;
-        line-height: 30px !important;
-        margin-bottom: 10px;
+        font-size: 110%;
+        line-height: 25px !important;
+    }
+
+    .article-snippet-wrapper p {
+        display: none;
+    }
+
+    .article-snippet-wrapper h4 {
+        font-size: 130%;
+        line-height: 40px !important;
+    }
+}
+
+@media (max-width: 505px) {
+    .article-snippet-wrapper h4 {
+        font-size: 100%;
+        line-height: 25px !important;
     }
 }
 
@@ -411,6 +458,7 @@ p.description {
 
 .vid-title {
     line-height: 40px;
+    margin: 0;
 }
 
 .social_buttons {
@@ -518,4 +566,33 @@ p.description {
 
 .likecountstat {
     margin-right: 10px;
+}
+
+.video-publish-date {
+    font-size: 85%;
+    margin: 10px 0px;
+}
+
+.article-snippet-wrapper h4 {
+    line-height: 40px;
+}
+
+.article-snippet-wrapper p {
+    line-height: 30px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.article-snippet-img {
+    min-width: 100px;
+    display: block;
+}
+
+.article-snippet:hover {
+    text-decoration: none;
+}
+
+.article-snippet-bg {
+    padding: 20px 20px 30px 20px;
+    background-color: #dfdfdf;
 }

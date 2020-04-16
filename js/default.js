@@ -4,7 +4,7 @@ function dateFixer() {
         diffTime, diffHours, diffFinal, unitTxt, hours = 1000 * 60 * 60;
     for (index = 0; index < dateLabels.length; index++) {
         dateText = dateLabels[index].innerHTML;
-        dateObj = new Date(dateText);
+        dateObj = new Date(dateText.trim());
         diffTime = Math.abs(currentDate - dateObj);
         diffHours = Math.ceil(diffTime / hours);
 
