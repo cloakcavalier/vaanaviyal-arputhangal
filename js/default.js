@@ -33,7 +33,7 @@ function dateFixer() {
         if (diffFinal > 1) {
             unitTxt = unitTxt + "s";
         }
-        dateLabels[index].innerHTML = "Published " + diffFinal + " " + unitTxt + " ago";
+        dateLabels[index].innerHTML = "" + diffFinal + " " + unitTxt + " ago";
 
     }
 }

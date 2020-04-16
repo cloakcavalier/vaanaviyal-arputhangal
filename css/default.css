@@ -160,8 +160,8 @@ body {
     text-overflow: ellipsis;
 }
 
-.thumbnail p.elapsed-time {
-    color: #aaa;
+.thumbnail .subtitle {
+    color: #888;
     font-size: 80%;
 }
 
@@ -317,7 +317,7 @@ p.description {
     }
 }
 
-/*Styles for thumbnails*/
+/*Styles for thumbnails and video title*/
 @media (max-width: 575px) {
     .thumbnail img {
         width: 200px;
@@ -329,6 +329,17 @@ p.description {
         overflow: hidden;
         line-height: 25px;
         max-height: 100px;
+    }
+
+    .thumbnail .subtitle .elapsed-time,
+    .thumbnail .subtitle .bullet-point {
+        display: none;
+    }
+
+    .vid-title {
+        font-size: 120%;
+        line-height: 30px !important;
+        margin-bottom: 10px;
     }
 }
 
@@ -493,4 +504,18 @@ p.description {
     border-bottom: 1px solid;
     margin-bottom: 10px;
     padding-bottom: 5px;
+}
+
+.likecommentstat {
+    float: right;
+    padding-right: 50px;
+    font-size: 90%;
+}
+
+.likecommentstat .fa {
+    font-size: 180%;
+}
+
+.likecountstat {
+    margin-right: 10px;
 }
