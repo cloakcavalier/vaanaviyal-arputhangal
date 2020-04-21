@@ -502,7 +502,8 @@ p.description {
     font-size: 80%;
 }
 
-.article-wrapper img {
+.article-wrapper .article-img,
+.article-wrapper .video-link {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -519,9 +520,11 @@ p.description {
     color: #766ab0;
 }
 
-@media (min-width:576px) {
-    .article-wrapper img {
-        width: 500px;
+@media (min-width:756px) {
+
+    .article-wrapper .article-img,
+    .article-wrapper .video-link {
+        width: 700px;
         margin: 0 auto;
         display: block;
         padding: 0px 20px 10px 0px;
@@ -532,6 +535,11 @@ p.description {
         display: block;
         margin: 0 auto;
         padding-bottom: 20px;
+    }
+
+    .article-wrapper p {
+        font-size: 140%;
+        line-height: 40px;
     }
 }
 
@@ -595,4 +603,29 @@ p.description {
 .article-snippet-bg {
     padding: 20px 20px 30px 20px;
     background-color: #dfdfdf;
+}
+
+.video-link {
+    display: block;
+    position: relative;
+}
+
+.video-link img {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.video-link .play-button {
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 43%;
+    top: 40%;
+}
+
+.call-action {
+    font-size: 140%;
+    color: red;
 }
