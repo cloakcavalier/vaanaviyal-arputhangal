@@ -499,6 +499,7 @@ p.description {
     line-height: 20px;
     margin-bottom: 30px;
     color: #777;
+    text-align: center;
     font-size: 80%;
 }
 
@@ -533,7 +534,9 @@ p.description {
     .article-wrapper p.subtext {
         width: 500px;
         display: block;
+        font-size: 120%;
         margin: 0 auto;
+        line-height: 30px;
         padding-bottom: 20px;
     }
 
