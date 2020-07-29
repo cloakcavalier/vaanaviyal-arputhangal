@@ -1,146 +1,88 @@
 body {
     color: #5a5a5a;
     min-width: 320px;
+    padding-top: 100px;
 }
 
-.header-bg {
-    background-image: url('/img/header_bg.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 40px;
-}
-
-.navbar-home {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
-    /*background-color: #3A3559;*/
-    border: 1px solid #4B4566;
-    height: 40px;
-    border-radius: 30px;
-    margin: 50px 0px 30px;
-    font-size: 80%;
-}
-
-.navbar-bg {
-    background: linear-gradient(to top,
-            #3A3559,
-            #4B4566);
-}
-
-.navbar-default {
-    height: 50px;
-    font-size: 80%;
-}
-
-.navbar-brand > img.logo-home {
-    width: 100px;
-    border-radius: 75px;
-    border: 5px solid #3A3559;
-    margin-left: 20px;
-}
-
-.navbar-brand > img.logo-default {
-    width: 40px;
-    margin-left: 20px;
-}
-
-
-.nav-item {
-    margin-left: 10px;
-}
-
-.carousel {
-    margin: 20px;
-}
-
-.carousel-inner {
-    margin-bottom: 30px;
-}
-
-.carousel-text-wrapper {
-    padding: 45px 30px 0px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 0px;
-    color: #88FD33;
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 1),
-            rgba(0, 0, 0, 0))
-}
-
-.carousel-text a {
-    color: inherit;
-}
-
-.carousel-text {
-    padding-bottom: 40px;
-}
-
-.carousel-item {
-    height: 32em;
-}
-
-@media (max-height: 720px) {
-    .carousel-item {
-        height: 16em;
-    }
-}
-
-.carousel-item > .slide-img {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
-@media (min-width: 40em) {
-    .carousel-text p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
+.pre-header {
+    background-color: #3A375A;
+    height: 30px;
+    top: 70px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1020;
 }
 
 .logoText {
     display: none;
 }
 
-.social-icons {
-    font-size: 150%;
+.logo-home {
+    width: 100px;
+    margin-top: -30px;
+    position: absolute;
+    border-radius: 75px;
+    border: 2px solid #3A3559;
 }
 
-.social-icons .nav-item,
-.social-icons .nav-link {
-    margin: 0;
-    padding: 0 !important;
+
+/* general HD specific styles*/
+@media (max-width: 767px) {
+    .navbar-brand > img {
+        display: none;
+    }
+
+    .navbar-custom {
+        height: auto !important;
+        margin: auto;
+    }
+
+    .logoText {
+        display: block;
+        color: #0088fd;
+        font-size: 80%;
+    }
+
+    .logoText > span {
+        color: #88fd00;
+    }
+
+    .pre-header {
+        display: none;
+    }
+
+    body {
+        padding-top: 55px;
+    }
 }
 
-.social-icons .fa {
-    margin-left: 5px;
+
+.navbar-custom {
+    height: 70px;
+    margin-bottom: 30px;
+    background-color: #2B2641;
+    font-size: 90%;
 }
 
-.fa-youtube-square,
-.fa-youtube-play {
-    color: #e52d27;
+.nav-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.fa-instagram {
-    color: #517fa4;
+/* Carousel base class */
+.carousel {
+    margin-bottom: 2rem;
 }
 
-.fa-facebook,
-.fa-facebook-square {
-    color: #006aec
+.carousel-item > a {
+    width: 100%;
 }
 
-.fa-twitter,
-.fa-twitter-square {
-    color: #00aced
+.carousel-item > a > img {
+    width: 100%;
 }
-
-.fa-envelope {
-    color: #cccccc;
-}
-
 
 .thumbnail a:hover {
     text-decoration: none;
@@ -163,10 +105,6 @@ body {
 .thumbnail .subtitle {
     color: #888;
     font-size: 80%;
-}
-
-p.description {
-    /*text-align: justify;*/
 }
 
 .sub-banner {
@@ -203,24 +141,6 @@ p.description {
     color: #ddd;
 }
 
-.subscribe-button:hover {
-    text-decoration: none;
-    background-color: #f00;
-    color: #fff;
-}
-
-.subscribe-button {
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 50px;
-    color: #efefef;
-    border-radius: 10px;
-    background-color: #dd0000;
-    transition: 0.3s;
-}
 
 /*Player specific style for hd displays*/
 @media(min-width:1065px) {
@@ -233,40 +153,6 @@ p.description {
     }
 }
 
-/* general HD specific styles*/
-@media (max-width: 767px) {
-    .navbar-brand > img {
-        display: none;
-
-    }
-
-    .navbar-home {
-        margin: 10px 0px;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .navbar-default {
-        height: auto;
-    }
-
-    .logoText {
-        display: block;
-        /*color: #0088fd;*/
-        color: white;
-        font-size: 80%;
-    }
-
-    .logoText > span {
-        /*color: #88fd00;*/
-        color: white;
-    }
-
-    .navbar-toggler-icon {
-        width: 20px;
-        height: 20px;
-    }
-}
 
 /*Styles for Home banner and article snippet wrapper*/
 @media (max-width: 1199px) {
@@ -278,16 +164,6 @@ p.description {
 
     .sub-count-val {
         font-size: 250%;
-    }
-
-    .article-snippet-wrapper h4 {
-        font-size: 130%;
-    }
-
-    .article-snippet-wrapper p {
-        font-size: 100%;
-        line-height: 20px;
-        height: 100px;
     }
 }
 
@@ -303,14 +179,14 @@ p.description {
     }
 
     .article-snippet-wrapper h4 {
-        font-size: 120%;
+        margin-top: 20px;
+        font-size: 150%;
         line-height: 30px !important;
     }
 
     .article-snippet-wrapper p {
         font-size: 100%;
-        line-height: 25px !important;
-        height: 100px !important;
+        line-height: 30px !important;
     }
 }
 
@@ -327,13 +203,12 @@ p.description {
 
     .article-snippet-wrapper h4 {
         font-size: 110%;
-        line-height: 25px !important;
+        margin-top: 10px;
     }
 
     .article-snippet-wrapper p {
         font-size: 90%;
-        line-height: 20px !important;
-        height: 80px !important;
+        line-height: 25px !important;
     }
 }
 
@@ -370,22 +245,6 @@ p.description {
 
     .vid-title {
         font-size: 110%;
-        line-height: 25px !important;
-    }
-
-    .article-snippet-wrapper p {
-        display: none;
-    }
-
-    .article-snippet-wrapper h4 {
-        font-size: 130%;
-        line-height: 40px !important;
-    }
-}
-
-@media (max-width: 505px) {
-    .article-snippet-wrapper h4 {
-        font-size: 100%;
         line-height: 25px !important;
     }
 }
@@ -584,29 +443,6 @@ p.description {
     margin: 10px 0px;
 }
 
-.article-snippet-wrapper h4 {
-    line-height: 40px;
-}
-
-.article-snippet-wrapper p {
-    line-height: 30px;
-    height: 120px;
-    overflow: hidden;
-}
-
-.article-snippet-img {
-    min-width: 100px;
-    display: block;
-}
-
-.article-snippet:hover {
-    text-decoration: none;
-}
-
-.article-snippet-bg {
-    padding: 20px 20px 30px 20px;
-    background-color: #dfdfdf;
-}
 
 .video-link {
     display: block;
@@ -632,4 +468,14 @@ p.description {
     font-size: 140%;
     color: red;
     line-height: 35px !important;
+}
+
+.article-snippet-wrapper h4 {
+    font-size: 130%;
+    line-height: 35px !important;
+}
+
+.article-snippet-wrapper p {
+    font-size: 100%;
+    line-height: 25px;
 }

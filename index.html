@@ -15,6 +15,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/default.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
     <meta name="description" content="தமிழ் மூலம் எளிய முறையில் அடிப்படையில் இருந்து  வானவியல் கற்க உதவும் வீடியோக்களை கண்டு பயனடைய எங்கள் இணையத்தளத்தை பாருங்கள்..." />
 
@@ -36,136 +37,86 @@
 </head>
 
 <body>
-<div class="container-fluid header-bg">
+
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img class="logo-home" src="/img/logo.png" />
+                    <div class=logoText>வானவியல் <span>அற்புதங்கள்</span></div>                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/index.html"><i class="fa fa-fw fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html"><i class="fa fa-fw fa-info-circle"></i> About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="pre-header">
+            &nbsp;
+        </div>
+    </div>
+</header>
+<div id="infoCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#infoCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#infoCarousel" data-slide-to="1"></li>
+        <li data-target="#infoCarousel" data-slide-to="2"></li>
+        <li data-target="#infoCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="/watch/JIB3JbIIbPU.html"><img src="/img/b/banner1.jpg" /></a>
+        </div>
+        <div class="carousel-item">
+            <a href="/watch/To4pF0A-Bw0.html"><img src="/img/b/banner3.jpg" /></a>
+        </div>
+        <div class="carousel-item">
+            <a href="/watch/9kt1LJ-_LvU.html"><img src="/img/b/banner2.jpg" /></a>
+        </div>
+        <div class="carousel-item">
+            <a href="/watch/ZgYUX3Jl9mQ.html"><img src="/img/b/banner4.jpg" /></a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#infoCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#infoCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- Latest Article -->
+<div class="container-fluid article-snippet-bg mb-4">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-home navbar-expand-md navbar-dark navbar-bg">
-                    <a class="navbar-brand" href="/index.html">
-                        <img class="logo-home" src="/img/logo.png"/>
-                        <div class=logoText>வானவியல் <span>அற்புதங்கள்</span></div>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarItems"
-                            aria-controls="navBarItems" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navBarItems">
-
-<ul class="navbar-nav">
-    <li class="nav-item active">
-        <a class="nav-link" href="/index.html"><i class="fa fa-fw fa-home"></i> Home <span class="sr-only">(current)</span></a>
-    </li>
-    <!--li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-fw fa-video-camera"></i> Topics</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-fw fa-bell"></i> News</a>
-    </li-->
-    <li class="nav-item">
-        <a class="nav-link" href="/about.html"><i class="fa fa-fw fa-info-circle"></i> About</a>
-    </li>
-
-</ul>
-
-                        <div class="d-md-block d-none ml-auto">
-                            <ul class="navbar-nav social-icons ">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.youtube.com/channel/UCGYfuNhmn4HmOVhOBqUeWNw"
-                                       target=_blank><i class="fa fa-fw fa-youtube-square"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="mailto:vanaviyal@gmail.com" target=_blank><i
-                                            class="fa fa-fw fa-envelope"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.facebook.com/vaanaviyal.arputhangal/"
-                                       target=_blank><i class="fa fa-fw fa-facebook-square"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/vaanaviyal" target=_blank><i
-                                            class="fa fa-fw fa-twitter"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.instagram.com/vaanaviyal.arputhangal/"
-                                       target=_blank><i class="fa fa-fw fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </nav>
+        <div class="row border-bottom">
+            <div class="col">
+                <h4>Latest News</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div id="infoCarousel" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li data-target="#infoCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#infoCarousel" data-slide-to="1"></li>
-    <li data-target="#infoCarousel" data-slide-to="2"></li>
-    <li data-target="#infoCarousel" data-slide-to="3"></li>
-</ol>
-<div class="carousel-inner">
-    <div class="carousel-item active">
-        <div class="slide-img" style="background-image: url('https://img.youtube.com/vi/9kt1LJ-_LvU/maxresdefault.jpg');">
-            <div class="carousel-text-wrapper">
-                <div class="carousel-text">
-                    <a href="/watch/9kt1LJ-_LvU.html">
-                        <p>சூரியக்குடும்பம் ஒரு சுற்றுலா | Tour of our Solar System in Tamil</p>
-                    </a>
+
+        <div class="article-snippet">
+            <div class="row mt-4">
+                <div class="col-12 col-lg-5">
+                    <img class="img-fluid article-snippet-img" src="/img//a/a1758_lg.jpg" />
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <div class="slide-img" style="background-image: url('https://img.youtube.com/vi/JOpI0tdlSx0/maxresdefault.jpg');">
-            <div class="carousel-text-wrapper">
-                <div class="carousel-text">
-                    <a href="/watch/JOpI0tdlSx0.html">
-                        <p>வேற்றுலக உயிர்கள் இருக்க அதிக வாய்ப்புள்ள நிலா | Chance to Find alien life  in this Moon in tamil</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <div class="slide-img" style="background-image: url('https://img.youtube.com/vi/9lbku2Ouj8k/maxresdefault.jpg');">
-            <div class="carousel-text-wrapper">
-                <div class="carousel-text">
-                    <a href="/watch/9lbku2Ouj8k.html">
-                        <p>*புதிய கண்டுபிடிப்பு*  சூரியனில் நடக்கும் Forced Magnetic Reconnection</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <div class="slide-img" style="background-image: url('https://img.youtube.com/vi/IvSsdNzmLCs/maxresdefault.jpg');">
-            <div class="carousel-text-wrapper">
-                <div class="carousel-text">
-                    <a href="/watch/IvSsdNzmLCs.html">
-                        <p>விவசாயிகளுக்காக ஒரு செயற்கைகோள் | A satellite that helps farmers</p>
-                    </a>
+                <div class="col-12 col-lg-7 article-snippet-wrapper">
+                    <h4>4 கேலக்சி குழுமங்கள் மோதும் காட்சி புகைப்படம் எடுக்கப்பட்டது</h4>
+                    <p>விஞ்ஞானிகள் நாசாவின் சந்திரா எக்ஸ்ரே செயற்கைக்கோளின் (Chandra X-ray Observatory) உதவியுடனும், மற்ற நாடுகளின் தொலை நோக்கிகளுடனும் சேர்ந்து மிக அரிதான 4 வகை கேலக்ஸி குழுமங்கள் (Galaxy Clusters) மோதுவதை ...</p>
+                    <a href="/article/MegaClusterGalaxy.html" class="btn btn-danger">Read More...</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-                    <a class="carousel-control-prev" href="#infoCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#infoCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 <!---- TRENDING VIDEOS -->
 <div class="container">
     <div class="row border-bottom">
@@ -181,7 +132,7 @@
                         src="https://img.youtube.com/vi/9kt1LJ-_LvU/maxresdefault.jpg"/>
                     <p class="title">சூரியக்குடும்பம் ஒரு சுற்றுலா | Tour of our Solar System in Tamil</p>
                     <p class="subtitle">
-                        <span class="totalviews">19.4K Views</span> <span class="bullet-point">•</span>
+                        <span class="totalviews">19.5K Views</span> <span class="bullet-point">•</span>
                         <span class="elapsed-time">2020-07-04T12:30:11.000Z</span>
                     </p>
                 </a>
@@ -214,11 +165,11 @@
     </div>
 </div>
 <!---- Sub count banner -->
-<div class="container-fluid">
+<div class="container-fluid mb-4">
     <div class="row ">
         <div class="col-md-6 sub-count-wrapper">
             <div class="sub-count pull-right mt-4 mb-4">
-                <p class="vu-count">1,825,979 பார்வையாளர்கள்</p>
+                <p class="vu-count">1,826,477 பார்வையாளர்கள்</p>
                 <p class="sub-count-val">41,300 ஆதரவாளர்கள்</p>
             </div>
 
@@ -226,7 +177,7 @@
         <div class="col-md-6 sub-action-wrapper">
             <div class="sub-action pull-left mt-4 ml-4 mb-4">
                 <p> நீங்களும் பங்களித்து விண்வெளியை பற்றி அறியுங்கள்</p>
-                <a target="_blank" href="http://www.youtube.com/channel/UCGYfuNhmn4HmOVhOBqUeWNw?sub_confirmation=1" class="subscribe-button">
+                <a target="_blank" href="http://www.youtube.com/channel/UCGYfuNhmn4HmOVhOBqUeWNw?sub_confirmation=1" class="btn btn-danger btn-lg">
                     Subscribe
                 </a>
             </div>
@@ -235,27 +186,48 @@
 
 </div>
 
-<!--div class="container-fluid article-snippet-bg mb-4">
-    <div class="container mb-4">
-        <div class="row border-bottom">
-            <div class="col">
-                <h4>Recent Article</h4>
+<!-- Recent articles -->
+<div class="container mb-4">
+    <div class="row border-bottom">
+        <div class="col">
+            <h4>Recent Articles</h4>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="/img//a/hubbleatlas.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">உடைந்த அட்லஸ் வால் நட்சத்திரத்தை ஹபுல் புகைப்படம் எடுத்தது</h5>
+                        <p class="card-text">அட்லஸ் எனும் வால் நட்சத்திரம் (Comet Atlas) பூமியை நெருங்குகையில், நம் இரவு வானத்தில் மிக அழகாக காட்சியளிக்க இருந்ததாக விண்வெளி ஆர்வளர்கள் கணித்திருந்தனர். மிகவும் எதிர்ப்பார்க்கப்பட்ட இந்த வால் நட்சத...</p>
+                        <p class="card-text"><small class="text-muted"><span class="elapsed-time">2020-04-27</span></small></p>
+                        <a href="/article/HubbleAtlas.html" class="btn btn-danger">Read More...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="/img//a/bombetoka.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">பூமியின் நரம்பு நாடிகளான அதன் நதிகள்</h5>
+                        <p class="card-text">ஆப்ரிகவின் கிழக்கு கடற்ப்பகுதியில் உள்ள தீவு தான் மடகாஸ்கர் (Madagascar). இதன் வடமேற்கு பகுதியில் உள்ள கடற்கரையில், மொசாம்பிக் கால்வாய் (Mozambique Channel) மூலமாக கடல் நீர் பெட்சிபோக்கா நதியுடன் (Bet...</p>
+                        <p class="card-text"><small class="text-muted"><span class="elapsed-time">2020-04-26</span></small></p>
+                        <a href="/article/EarthsNerves.html" class="btn btn-danger">Read More...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="/img//a/PlanetCollision.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">இரண்டு வேற்றுலகங்கள் மோதியதாக நாசா கண்டுபிடிப்பு</h5>
+                        <p class="card-text">நமது சூரியக்குடும்பத்தில் உள்ள கைப்பர் பட்டை (Kuiper Belt) போல BD+20°307 எனும் வேற்றுலக சூரியக்குடும்பத்தில் விஞ்ஞானிகள் தூசிதுகள்களை கண்டுபிடித்துள்ளனர். இந்த சூரியக்குடும்பம் சுமார் 300 ஒளியாண்டுகள்...</p>
+                        <p class="card-text"><small class="text-muted"><span class="elapsed-time">2020-04-21</span></small></p>
+                        <a href="/article/BD20307.html" class="btn btn-danger">Read More...</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <a class="article-snippet" href="/article/<#ArticleSnippetId0#>.html">
-            <div class="row mt-4">
-                <div class="col-6 col-md-4">
-                    <img class="img-fluid article-snippet-img" src="img/<#ArticleSnippetMetaImageName0#>"/>
-                </div>
-                <div class="col-6 col-md-8 article-snippet-wrapper">
-                    <h4><#ArticleSnippetTitle0#></h4>
-                    <p><#ArticleSnippetContent0#></p>
-                </div>
-            </div>
-        </a>
     </div>
-</div-->
-
+</div>
 <div class="container mt-4">
     <div class="row border-bottom">
         <div class="col">
@@ -294,7 +266,7 @@
                     <img src="https://img.youtube.com/vi/TEpOfHOAvbU/maxresdefault.jpg"/>
                     <p class="title">காலப்பயணம் சாத்தியமா | Is time travel really possible in Tamil?</p>
                     <p class="subtitle">
-                        <span class="totalviews">32.6K Views</span> <span class="bullet-point">•</span>
+                        <span class="totalviews">32.7K Views</span> <span class="bullet-point">•</span>
                         <span class="elapsed-time">2019-04-30T12:27:41.000Z</span>
                     </p>
                 </a>
@@ -407,7 +379,5 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 </body>
 </html>
