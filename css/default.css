@@ -71,11 +71,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Carousel base class */
-.carousel {
-    margin-bottom: 2rem;
-}
-
 .carousel-item > a {
     width: 100%;
 }
@@ -478,4 +473,9 @@ body {
 .article-snippet-wrapper p {
     font-size: 100%;
     line-height: 25px;
+}
+
+.videos-bg {
+    background-color: #eee;
+    padding: 30px 0px;
 }
