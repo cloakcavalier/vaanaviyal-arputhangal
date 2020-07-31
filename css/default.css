@@ -79,8 +79,17 @@ body {
     width: 100%;
 }
 
+.thumbnail {
+    height: auto;
+}
+
 .thumbnail a:hover {
     text-decoration: none;
+
+}
+
+.thumbnail a:hover > p.title {
+    color: #007bff;
 }
 
 .thumbnail img {
@@ -93,7 +102,7 @@ body {
 }
 
 .thumbnail p.title {
-    color: #3A3559;
+    color: #766ab0;
     text-overflow: ellipsis;
 }
 
@@ -342,7 +351,7 @@ body {
 }
 
 .article-wrapper {
-    padding-top: 20px;
+    font: 'Catamaran', sans-serif;
 }
 
 .article-wrapper p {
@@ -372,6 +381,7 @@ body {
 .article-wrapper h4 {
     line-height: 45px;
     margin: 0px;
+    font-weight: 500;
     color: #766ab0;
 }
 
@@ -379,10 +389,8 @@ body {
 
     .article-wrapper .article-img,
     .article-wrapper .video-link {
-        width: 700px;
         margin: 0 auto;
         display: block;
-        padding: 40px 20px 0px 0px;
     }
 
     .article-wrapper p.subtext {
@@ -395,8 +403,7 @@ body {
     }
 
     .article-wrapper p {
-        font-size: 140%;
-        line-height: 40px;
+        font-size: 110%;
     }
 }
 
@@ -465,8 +472,13 @@ body {
     line-height: 35px !important;
 }
 
+.article-snippet {
+    background-color: white;
+}
+
 .article-snippet-wrapper h4 {
     font-size: 130%;
+    color: #766ab0;
     line-height: 35px !important;
 }
 
@@ -478,4 +490,33 @@ body {
 .videos-bg {
     background-color: #eee;
     padding: 30px 0px;
+}
+
+.article-heading {
+    color: #766ab0;
+}
+
+.article-snippet a {
+    color: inherit;
+
+}
+
+.article-snippet a:hover .article-snippet-wrapper h4,
+.article-snippet a:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.card a {
+    color: inherit;
+}
+
+.card a:hover .card-title,
+.card a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-title {
+    color: #766ab0;
 }
