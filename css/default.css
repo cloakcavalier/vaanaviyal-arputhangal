@@ -520,3 +520,11 @@ body {
 .card-title {
     color: #766ab0;
 }
+
+.author-thumbnail {
+    width:50px;
+}
+
+.card-age {
+    margin-bottom:5px;
+}

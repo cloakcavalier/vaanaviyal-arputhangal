@@ -11,22 +11,22 @@ function dateFixer() {
         diffFinal = diffHours;
         unitTxt = "hour";
 
-        if (diffFinal > 23) {
-            diffFinal = Math.round(diffFinal / 24);
+        if (diffFinal > 48) {
+            diffFinal = Math.floor(diffFinal / 24);
             unitTxt = "day";
         }
         if (diffFinal > 6 && unitTxt === "day") {
-            diffFinal = Math.round(diffFinal / 7);
+            diffFinal = Math.floor(diffFinal / 7);
             unitTxt = "week";
         }
 
         if (diffFinal > 3 && unitTxt === "week") {
-            diffFinal = Math.round(diffFinal / 4);
+            diffFinal = Math.floor(diffFinal / 4);
             unitTxt = "month";
         }
 
         if (diffFinal > 11 && unitTxt === "month") {
-            diffFinal = Math.round(diffFinal / 12);
+            diffFinal = Math.floor(diffFinal / 12);
             unitTxt = "year";
         }
 
