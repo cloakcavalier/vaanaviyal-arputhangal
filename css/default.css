@@ -369,7 +369,7 @@ body {
 .article-wrapper .article-img,
 .article-wrapper .video-link {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 0px 10px;
 }
 
 .article-wrapper p.published-by {
@@ -390,7 +390,6 @@ body {
     .article-wrapper .article-img,
     .article-wrapper .video-link {
         margin: 0 auto;
-        display: block;
     }
 
     .article-wrapper p.subtext {
@@ -399,7 +398,6 @@ body {
         font-size: 100%;
         margin: 0 auto;
         line-height: 30px;
-        padding-bottom: 40px;
     }
 
     .article-wrapper p {
@@ -522,9 +520,13 @@ body {
 }
 
 .author-thumbnail {
-    width:50px;
+    width: 50px;
 }
 
 .card-age {
-    margin-bottom:5px;
+    margin-bottom: 5px;
+}
+
+.subtext-emphasis {
+    font-style: italic;
 }
