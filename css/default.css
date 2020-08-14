@@ -2,6 +2,7 @@ body {
     color: #5a5a5a;
     min-width: 320px;
     padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .pre-header {
@@ -68,7 +69,6 @@ body {
 .nav-link {
     text-transform: uppercase;
     font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .carousel-item > a {
@@ -350,26 +350,24 @@ body {
     line-height: 35px;
 }
 
-.article-wrapper {
-    font: 'Catamaran', sans-serif;
-}
+.article-wrapper {}
 
 .article-wrapper p {
     line-height: 30px;
+    font-family: 'Mukta Malar', sans-serif;
 }
 
 .article-wrapper p.subtext {
-    line-height: 20px;
-    margin-bottom: 30px;
     color: #777;
     text-align: center;
     font-size: 80%;
+    line-height: 20px;
+    padding-top: 10px;
 }
 
 .article-wrapper .article-img,
 .article-wrapper .video-link {
     width: 100%;
-    margin: 0px 10px;
 }
 
 .article-wrapper p.published-by {
@@ -385,25 +383,17 @@ body {
     color: #766ab0;
 }
 
+.article-wrapper h4 a {
+    color: inherit;
+}
+
 @media (min-width:756px) {
-
-    .article-wrapper .article-img,
-    .article-wrapper .video-link {
-        margin: 0 auto;
-    }
-
-    .article-wrapper p.subtext {
-        width: 500px;
-        display: block;
-        font-size: 100%;
-        margin: 0 auto;
-        line-height: 30px;
-    }
 
     .article-wrapper p {
         font-size: 110%;
     }
 }
+
 
 .article-banner {
     padding: 10px;
@@ -500,7 +490,8 @@ body {
 }
 
 .article-snippet a:hover .article-snippet-wrapper h4,
-.article-snippet a:hover {
+.article-snippet a:hover,
+.article-wrapper h4 a:hover {
     text-decoration: none;
     color: #007bff;
 }
