@@ -350,8 +350,6 @@ body {
     line-height: 35px;
 }
 
-.article-wrapper {}
-
 .article-wrapper p {
     line-height: 30px;
     font-family: 'Mukta Malar', sans-serif;
@@ -393,7 +391,6 @@ body {
         font-size: 110%;
     }
 }
-
 
 .article-banner {
     padding: 10px;
